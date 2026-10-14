@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web3 forum</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>Web3 forum</h1>
+        <span id="account_lbl" hidden></span>
+        <button id="connection_btn">Connect</button>
+    </header>
+
+    <main id="app" hidden>
+        <section class="card">
+            <textarea id="post_input" rows="3" placeholder="What's on your mind?"></textarea>
+            <button id="create_btn">Publish</button>
+        </section>
+
+        <section class="card toolbar">
+            <input id="author_input" type="text" placeholder="Author address 0x...">
+            <button id="filter_btn">Filter</button>
+            <button id="mine_btn" class="secondary">My posts</button>
+            <button id="all_btn" class="secondary">All posts</button>
+            <button id="delete_all_btn" class="danger">Delete all my posts</button>
+        </section>
+
+        <section id="posts"></section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@4.16.0/dist/web3.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
